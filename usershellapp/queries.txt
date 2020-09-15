@@ -1,0 +1,16 @@
+ClassName.objects.create(field1="value for field1", field2="value for field2", etc.)
+
+User.objects.create(firstName = "James", lastName = "Harden", email = "jaharden@rockets.com", birthday = "1990-06-27")
+
+User.objects.create(firstName = "PJ", lastName = "Tucker", email = "PJ@gmail.com", birthday = "1987-10-31")
+
+User.objects.create(firstName = "Russel", lastName = "Westbrook", email = "russ@rockets.com", birthday = "1988-06-27")
+
+User.objects.all()
+User.objects.last()
+User.objects.first()
+
+User.objects.get(id=3)
+User2.delete()
+
+User.objects.all().order_by("firstName").reverse()
